@@ -416,7 +416,7 @@ p,
 		justify-content: start;
 		padding: 15vh 3rem;
 		position: fixed;
-		transform: translateX(110%);
+		transform: translateX(130%);
 		transition: transform 500ms ease-in-out;
 		z-index: 1000;
 	}
