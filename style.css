@@ -323,7 +323,7 @@ p,
 
 .primary-header-layout {
 	display: grid;
-	grid-template-columns: auto 1fr;
+	grid-template-columns: 1fr;
 	grid-template-rows: 15vh;
 
 	align-items: center;
@@ -331,7 +331,7 @@ p,
 
 .primary-navigation {
 	display: grid;
-	grid-template-columns: 1fr repeat(4, auto) 1fr min-content;
+	grid-template-columns: repeat(4, auto) min-content;
 
 	align-items: center;
 	list-style: none;
@@ -339,18 +339,13 @@ p,
 	padding: 0;
 }
 
-.primary-navigation > .nav-item1 {
+/* .primary-navigation > .nav-item1 {
 	grid-column: 2;
-}
+} */
 
-.primary-navigation > .contact-btn-wrap {
+/* .primary-navigation > .contact-btn-wrap {
 	grid-column: 7;
-}
-
-.logo {
-	max-height: 12vh;
-	object-fit: contain;
-}
+} */
 
 .primary-navigation a {
 	text-decoration: none;
@@ -513,6 +508,18 @@ p,
 
 /* ////////////////////// */
 
+.section2 {
+	grid-template-rows: minmax(100vh, auto);
+
+	place-items: center;
+}
+
+.sect2-image {
+	width: 50%;
+}
+
+/* ////////////////////// */
+
 .footer-layout {
 	display: grid;
 	grid-template-columns: auto 1fr auto;
@@ -569,8 +576,22 @@ p,
 	background-size: cover;
 }
 
+@media (max-width: 540px) {
+	.home {
+		background-image: linear-gradient(
+				hsl(var(--clr-black) / 0.5),
+				hsl(var(--clr-black) / 0.5)
+			),
+			url(./images/internal-transom-hero-mobile.jpg);
+	}
+}
+
 .primary-header {
 	background: hsl(var(--clr-black) / 0.4);
+}
+
+.section2 {
+	background-color: hsl(var(--clr-white));
 }
 
 .footer {
