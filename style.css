@@ -604,12 +604,12 @@ p,
 }
 
 .contact-btn-2 > a {
-	padding: 1rem 2rem;
+	padding: 1rem 5rem;
 }
 
 @media (min-width: 720px) {
-	.two-cta > .contact-btn-3 {
-		margin-right: 6vw;
+	.two-cta {
+		column-gap: 6vw;
 	}
 }
 
@@ -626,16 +626,18 @@ p,
 
 .socials {
 	align-self: end;
+	gap: 6vw;
 	justify-self: center;
 	text-align: center;
 }
+
 .link-icons {
-	gap: 2vw;
+	gap: 6vw;
 }
 
 .link-icon {
 	cursor: pointer;
-	width: 30px;
+	width: 60px;
 }
 
 .footer-links {
@@ -699,7 +701,3 @@ p,
 }
 
 /* ///////////////////////////////////////////////////////////////////////// */
-
-.test {
-	border: dotted;
-}
