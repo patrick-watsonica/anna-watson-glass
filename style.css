@@ -346,7 +346,7 @@ p,
 }
 
 .contact-btn-mobile {
-	position: absolute;
+	position: relative;
 	font-size: 0.75rem;
 }
 .contact-btn-mob {
