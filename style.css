@@ -420,9 +420,9 @@ p,
 		grid-column: 1;
 	}
 
-	.primary-navigation > .contact-btn-wrap {
+	/* .primary-navigation > .contact-btn-wrap {
 		grid-column: 1;
-	}
+	} */
 
 	.primary-navigation[data-visible='true'] {
 		transform: translateX(0);
