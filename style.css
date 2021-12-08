@@ -138,12 +138,12 @@ p,
 .fs-1 {
 	font-size: var(--fs-small);
 }
-.nav-link {
+.fs-nav {
 	font-size: var(--fs-small);
 }
 
 @media (min-width: 720px) and (max-width: 960px) {
-	.nav-link {
+	.fs-nav {
 		font-size: 0.75rem;
 	}
 }
@@ -359,16 +359,30 @@ p,
 	text-decoration: none;
 }
 
+.home-hidden {
+	color: hsl(var(--clr-white) / 0);
+}
+
 .nav-item {
 	border-bottom: 0.4vh solid hsl(var(--clr-white) / 0);
-	cursor: pointer;
-	padding: 1.4vh clamp(0.5rem, 1.8vw, 4.5rem) 1vh;
 	text-align: center;
+	padding: 1.4vh clamp(0.5rem, 1.8vw, 4.5rem) 1vh;
+}
+
+.nav-item > a {
+	display: block;
+	cursor: pointer;
 }
 
 .nav-item:hover,
 .nav-item:focus {
 	border-color: hsl(var(--clr-white) / 0.5);
+}
+
+.primary-navigation .active,
+.primary-navigation > [aria-selected='true'] {
+	border-color: hsl(var(--clr-white) / 1);
+	color: hsl(var(--clr-white) / 1);
 }
 
 .mobile-nav-toggle {
@@ -552,49 +566,6 @@ p,
 	}
 }
 
-.two-cta {
-	justify-content: center;
-	text-align: center;
-}
-
-.contact-btn-2 > a {
-	padding: 1rem 5rem;
-}
-
-.cta-2-btn > a {
-	border-radius: 3rem;
-	cursor: pointer;
-	padding: 1rem 2rem;
-	text-decoration: none;
-	white-space: nowrap;
-}
-
-.cta-2-btn > a:link,
-.cta-2-btn > a:visited,
-.cta-2-btn > a:focus {
-	background-color: hsl(var(--clr-light));
-	border: 0.1rem solid hsl(var(--clr-black));
-}
-
-.cta-2-btn > a:hover {
-	background-color: hsl(var(--clr-dark));
-	border: 0.1rem solid hsl(var(--clr-white));
-	color: hsl(var(--clr-white));
-}
-
-.cta-2-btn > a:active {
-	background-color: var(--clr-btn);
-	border: 0.1rem solid hsl(var(--clr-white));
-	color: hsl(var(--clr-black));
-}
-
-@media (min-width: 720px) {
-	.two-cta {
-		column-gap: 6vw;
-	}
-}
-/* ////////////////////// */
-
 /* ////////////////////// */
 
 .footer-layout {
@@ -726,10 +697,8 @@ p,
 }
 
 .contact-btn:active {
-	.contact-btn-mob:active {
-		background: var(--clr-btn);
-		color: hsl(var(--clr-black));
-	}
+	background: var(--clr-btn);
+	color: hsl(var(--clr-black));
 }
 
 /* /////////////////////////// */
@@ -791,10 +760,8 @@ p,
 }
 
 .contact-btn-2 > a:active {
-	.contact-btn-mob:active {
-		background: var(--clr-btn);
-		color: hsl(var(--clr-black));
-	}
+	background: var(--clr-btn);
+	color: hsl(var(--clr-black));
 }
 
 /* ///////////////////////////// */
@@ -810,7 +777,7 @@ p,
 }
 
 .call-action-2-btn > a:hover,
-.call-action-2-btn > a {
+.call-action-2-btn > a:focus {
 	background-color: hsl(var(--clr-dark));
 	border: 0.1rem solid hsl(var(--clr-white));
 	color: hsl(var(--clr-white));
