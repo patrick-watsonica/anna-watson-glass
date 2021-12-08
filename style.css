@@ -345,41 +345,6 @@ p,
 	align-items: center;
 }
 
-.contact-btn-mobile {
-	position: relative;
-	font-size: 0.75rem;
-}
-.contact-btn-mob {
-	border-radius: 2rem;
-	cursor: pointer;
-	padding: 0.3rem 0.8rem;
-	text-decoration: none;
-	white-space: nowrap;
-}
-
-.contact-btn-mob:link,
-.contact-btn-mob:visited,
-.contact-btn-mob:focus {
-	background-color: hsl(var(--clr-light));
-	border: 0.1rem solid hsl(var(--clr-white));
-}
-
-.contact-btn-mob:hover {
-	background-color: hsl(var(--clr-dark));
-	color: hsl(var(--clr-white));
-}
-
-.contact-btn-mob:active {
-	background: var(--clr-btn);
-	color: hsl(var(--clr-black));
-}
-
-@media (min-width: 720px) {
-	.contact-btn-mobile {
-		display: none;
-	}
-}
-
 .primary-navigation {
 	display: grid;
 	grid-template-columns: repeat(4, auto) min-content;
@@ -404,36 +369,6 @@ p,
 .nav-item:hover,
 .nav-item:focus {
 	border-color: hsl(var(--clr-white) / 0.5);
-}
-
-.contact-btn {
-	border-radius: 2rem;
-	cursor: pointer;
-	padding: 0.3rem 0.8rem;
-	text-decoration: none;
-	white-space: nowrap;
-}
-
-.contact-btn:link,
-.contact-btn:visited,
-.contact-btn:focus {
-	background-color: var(--clr-btn);
-	border: 0.1rem solid hsl(var(--clr-black));
-}
-
-.contact-btn:hover {
-	background-color: hsl(var(--clr-dark));
-	border: 0.1rem solid hsl(var(--clr-white));
-	color: hsl(var(--clr-white));
-}
-
-.contact-btn:active {
-	background-color: hsl(var(--clr-light));
-	color: hsl(var(--clr-black));
-}
-
-.contact-btn-wrap {
-	justify-self: end;
 }
 
 .mobile-nav-toggle {
@@ -479,9 +414,6 @@ p,
 		transform: translateX(0);
 	}
 
-	.contact-btn-nav {
-		justify-self: center;
-	}
 	/* MOBILE NAV TOGGLE ////////// */
 
 	.mobile-nav-toggle {
@@ -539,22 +471,6 @@ p,
 
 .section1-layout > a {
 	text-decoration: none;
-}
-.cta-1-btn {
-	background-color: hsl(var(--clr-black) / 0.5);
-	border: 0.1rem solid hsl(var(--clr-white));
-	border-radius: 3rem;
-	cursor: pointer;
-	padding: 1rem 1rem 0.5rem;
-	text-decoration: none;
-	white-space: nowrap;
-}
-
-.cta-1-btn:hover,
-.cta-1-btn:focus {
-	background-color: hsl(var(--clr-white));
-	border: 0.1rem solid hsl(var(--clr-black));
-	color: hsl(var(--clr-black));
 }
 
 /* ////////////////////// */
@@ -704,16 +620,6 @@ p,
 	width: 60px;
 }
 
-.footer-links {
-	text-align: right;
-	line-height: 2;
-	list-style: none;
-}
-
-.footer-links a {
-	text-decoration: none;
-}
-
 /* /////////////////////////////////////////////////////////// */
 
 /* ///////////////////////////////////////////////////////////////////////// */
@@ -765,3 +671,155 @@ p,
 }
 
 /* ///////////////////////////////////////////////////////////////////////// */
+
+/* ------------------------ */
+/* BUTTONS - CONTACT - CTA 	*/
+/* ------------------------ */
+.contact-btn-mobile {
+	position: relative;
+	font-size: 0.75rem;
+}
+.contact-btn-mob {
+	background-color: hsl(var(--clr-light));
+	border: 0.1rem solid hsl(var(--clr-white));
+	border-radius: 2rem;
+	cursor: pointer;
+	padding: 0.3rem 0.8rem;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.contact-btn-mob:hover,
+.contact-btn-mob:focus {
+	background-color: hsl(var(--clr-dark));
+	color: hsl(var(--clr-white));
+}
+
+.contact-btn-mob:active {
+	background: var(--clr-btn);
+	color: hsl(var(--clr-black));
+}
+
+@media (min-width: 720px) {
+	.contact-btn-mobile {
+		display: none;
+	}
+}
+
+/* ///////////////////////////*/
+
+.contact-btn {
+	background-color: hsl(var(--clr-light));
+	border: 0.1rem solid hsl(var(--clr-white));
+	border-radius: 2rem;
+	cursor: pointer;
+	padding: 0.3rem 0.8rem;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.contact-btn:hover,
+.contact-btn:focus {
+	background-color: hsl(var(--clr-dark));
+	border: 0.1rem solid hsl(var(--clr-white));
+	color: hsl(var(--clr-white));
+}
+
+.contact-btn:active {
+	.contact-btn-mob:active {
+		background: var(--clr-btn);
+		color: hsl(var(--clr-black));
+	}
+}
+
+/* /////////////////////////// */
+@media (max-width: 720px) {
+	.contact-btn-nav {
+		justify-self: center;
+	}
+}
+
+/* /////////////////////////// */
+
+/* ///////////////////////////*/
+/* button element so that text can wrap easily */
+.call-action-1-btn {
+	background-color: hsl(var(--clr-black) / 0.5);
+	border: 0.1rem solid hsl(var(--clr-white));
+	border-radius: 3rem;
+	cursor: pointer;
+	padding: 1rem 1rem 0.5rem;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.call-action-1-btn:hover,
+.call-action-1-btn:focus {
+	background-color: hsl(var(--clr-white));
+	border: 0.1rem solid hsl(var(--clr-black));
+	color: hsl(var(--clr-black));
+}
+
+/* ///////////////////////////*/
+
+.two-cta {
+	justify-content: center;
+	text-align: center;
+}
+
+@media (min-width: 720px) {
+	.two-cta {
+		column-gap: 6vw;
+	}
+}
+
+.contact-btn-2 > a {
+	background-color: var(--clr-btn);
+	border: 0.1rem solid hsl(var(--clr-black));
+	border-radius: 2rem;
+	cursor: pointer;
+	padding: 1rem 5rem;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.contact-btn-2 > a:hover,
+.contact-btn-2 > a:focus {
+	background-color: hsl(var(--clr-dark));
+	border: 0.1rem solid hsl(var(--clr-black));
+	color: hsl(var(--clr-white));
+}
+
+.contact-btn-2 > a:active {
+	.contact-btn-mob:active {
+		background: var(--clr-btn);
+		color: hsl(var(--clr-black));
+	}
+}
+
+/* ///////////////////////////// */
+
+.call-action-2-btn > a {
+	background-color: hsl(var(--clr-light));
+	border: 0.1rem solid hsl(var(--clr-black));
+	border-radius: 3rem;
+	cursor: pointer;
+	padding: 1rem 2rem;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.call-action-2-btn > a:hover,
+.call-action-2-btn > a {
+	background-color: hsl(var(--clr-dark));
+	border: 0.1rem solid hsl(var(--clr-white));
+	color: hsl(var(--clr-white));
+}
+
+.call-action-2-btn > a:active {
+	background-color: var(--clr-btn);
+	border: 0.1rem solid hsl(var(--clr-white));
+	color: hsl(var(--clr-black));
+}
+
+/* ///////////////////////////*/
