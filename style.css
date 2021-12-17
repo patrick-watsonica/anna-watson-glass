@@ -361,6 +361,7 @@ p,
 
 .home-hidden {
 	color: hsl(var(--clr-white) / 0);
+	text-shadow: none;
 }
 
 .nav-item {
@@ -398,9 +399,9 @@ p,
 		background-color: hsl(var(--clr-black) / 0.9);
 		background: hsl(var(--black));
 		background-image: linear-gradient(
-				hsl(var(--clr-black) / 0.5),
-				hsl(var(--clr-black) / 0.9),
-				hsl(var(--clr-black) / 0.5)
+				hsl(var(--clr-black) / 0),
+				hsl(var(--clr-black) / 0.3),
+				hsl(var(--clr-black) / 0)
 			),
 			url(./images/arrows-05.jpg);
 		background-position: center;
@@ -420,12 +421,13 @@ p,
 		grid-column: 1;
 	}
 
-	/* .primary-navigation > .contact-btn-wrap {
-		grid-column: 1;
-	} */
-
 	.primary-navigation[data-visible='true'] {
 		transform: translateX(0);
+	}
+
+	.nav-item a {
+		color: white;
+		text-shadow: 3px 3px 5px black, -3px -3px 5px black;
 	}
 
 	/* MOBILE NAV TOGGLE ////////// */
@@ -479,13 +481,24 @@ p,
 	text-align: center;
 }
 
+.section1 h1 {
+	text-shadow: 2px 0 5px black, -2px 0 5px black, 0 2px 5px black,
+		0 -2px 5px black;
+	color: hsl(var(--clr-white) / 0.9);
+}
+
 .sect1-sub {
 	gap: 3vw;
+	text-shadow: 1px 0 5px black, -1px 0 5px black, 0 1px 5px black,
+		0 -1px 5px black;
+	color: white;
 }
 
 .section1-layout > a {
 	text-decoration: none;
 }
+
+/* ////////////////////// */
 
 /* ////////////////////// */
 
@@ -570,20 +583,17 @@ p,
 
 .footer-layout {
 	display: grid;
-	grid-template-columns: 1fr auto;
+	grid-template-columns: 1fr;
 
 	align-items: center;
+	justify-content: center;
 }
 
 .socials {
-	align-self: end;
-	gap: 6vw;
+	gap: 3vw;
 	justify-self: center;
+	align-items: center;
 	text-align: center;
-}
-
-.link-icons {
-	gap: 6vw;
 }
 
 .link-icon {
@@ -602,8 +612,8 @@ p,
 .home {
 	background: hsl(var(--black));
 	background-image: linear-gradient(
-			hsl(var(--clr-black) / 0.5),
-			hsl(var(--clr-black) / 0.5)
+			hsl(var(--clr-black) / 0.1),
+			hsl(var(--clr-black) / 0.1)
 		),
 		url(./images/internal-transom-hero.jpg);
 	background-position: center;
@@ -614,16 +624,16 @@ p,
 @media (max-width: 540px) {
 	.home {
 		background-image: linear-gradient(
-				hsl(var(--clr-black) / 0.5),
-				hsl(var(--clr-black) / 0.5)
+				hsl(var(--clr-black) / 0.1),
+				hsl(var(--clr-black) / 0.1)
 			),
 			url(./images/internal-transom-hero-mobile.jpg);
 	}
 }
 
-.primary-header {
+/* .primary-header {
 	background: hsl(var(--clr-black) / 0.4);
-}
+} */
 
 .section2 {
 	background-color: hsl(var(--clr-white));
@@ -680,7 +690,7 @@ p,
 /* ///////////////////////////*/
 
 .contact-btn {
-	background-color: hsl(var(--clr-light));
+	background-color: var(--clr-btn);
 	border: 0.1rem solid hsl(var(--clr-white));
 	border-radius: 2rem;
 	cursor: pointer;
@@ -760,7 +770,7 @@ p,
 }
 
 .contact-btn-2 > a:active {
-	background: var(--clr-btn);
+	background-color: var(--clr-btn);
 	color: hsl(var(--clr-black));
 }
 
