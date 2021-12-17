@@ -613,19 +613,19 @@ p,
 			hsl(var(--clr-black) / 0.1),
 			hsl(var(--clr-black) / 0.1)
 		),
-		url(./images/internal-transom-hero.jpg);
+		url(./images/internal-transom-hero-mobile-02.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-@media (max-width: 540px) {
+@media (min-width: 540px) {
 	.home {
 		background-image: linear-gradient(
 				hsl(var(--clr-black) / 0.1),
 				hsl(var(--clr-black) / 0.1)
 			),
-			url(./images/internal-transom-hero-mobile.jpg);
+			url(./images/internal-transom-hero.jpg);
 	}
 }
 
