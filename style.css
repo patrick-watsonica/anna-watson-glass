@@ -805,41 +805,38 @@ p,
 } */
 /* .des-collect-1 {} */
 
-.img-test {
-	width: 49%;
-	height: 49%;
+.img-container {
 	cursor: pointer;
+	margin: 3vh 0;
+}
+
+.des-col {
+	width: auto;
+	max-height: 75vh;
 }
 
 .gallery {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: start;
-	gap: 5px;
+	display: grid;
+	/* flex-wrap: wrap; */
+	justify-content: center;
+	gap: 5vw;
 }
 
-@media (min-width: 540px) {
-	.img-test {
+/* @media (min-width: 540px) {
+	.img-container {
 		width: 32%;
 		height: 32%;
 	}
-}
+} */
 
 .full-attention {
 	display: flex;
 	background-color: hsl(var(--clr-black) / 0.8);
 	justify-content: center;
-	align-items: center;
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: 0%;
+	left: 0%;
 	width: 100%;
 	height: 100%;
 	z-index: 30;
-}
-
-.img-yo {
-	max-width: 95%;
-	max-height: 94%;
-	object-fit: contain;
 }
