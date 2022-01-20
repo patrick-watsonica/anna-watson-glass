@@ -813,3 +813,7 @@ p,
 	justify-content: center;
 	gap: 5vw;
 }
+
+.commissions-text {
+	text-align: left;
+}
