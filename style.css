@@ -814,6 +814,27 @@ p,
 	gap: 5vw;
 }
 
+/* .bespoke-process-img-wrap {
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	grid-template-rows: 50vh;
+} */
+
+picture {
+	display: grid;
+	justify-content: center;
+}
+
+.design-process-img {
+	width: 70vw;
+	grid-column: 2;
+}
+@media (min-width: 720px) {
+	.design-process-img {
+		width: 100vw;
+	}
+}
+
 .commissions-text {
 	text-align: left;
 }
