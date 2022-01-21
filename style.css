@@ -772,6 +772,11 @@ p,
 	color: hsl(var(--clr-black));
 }
 
+.contact-bespoke > a:hover,
+.contact-bespoke > a:focus {
+	border: 0.1rem solid hsl(var(--clr-white));
+}
+
 /* ///////////////////////////// */
 
 .call-action-2-btn {
@@ -804,7 +809,7 @@ p,
 /* ///////////////////////////*/
 
 .img-container {
-	cursor: pointer;
+	/* cursor: pointer; */
 	margin: 3vh 0;
 }
 
@@ -832,10 +837,10 @@ picture {
 }
 
 .design-process-img {
-	width: 70vw;
+	width: 80vw;
 	grid-column: 2;
 }
-@media (min-width: 720px) {
+@media (min-width: 600px) {
 	.design-process-img {
 		width: 100vw;
 	}
@@ -850,4 +855,8 @@ picture {
 .commissions-text {
 	text-align: left;
 	padding: 2vh 5vw;
+}
+
+.bespoke-hero {
+	max-height: 50vh;
 }
