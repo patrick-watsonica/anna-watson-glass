@@ -473,20 +473,20 @@ p,
 
 /* //////////////////////////////////////////////////////////////////////// */
 
-.section1 {
+.home-section1 {
 	grid-template-rows: minmax(85vh, auto);
 
 	place-items: center;
 	text-align: center;
 }
 
-.section1 h1 {
+.home-section1 h1 {
 	text-shadow: 2px 0 5px black, -2px 0 5px black, 0 2px 5px black,
 		0 -2px 5px black;
 	color: hsl(var(--clr-white) / 0.9);
 }
 
-.sect1-sub {
+.home-sect1-sub {
 	gap: 3vw;
 	text-shadow: 1px 0 5px black, -1px 0 5px black, 0 1px 5px black,
 		0 -1px 5px black;
@@ -626,10 +626,6 @@ p,
 			),
 			url(./images/internal-transom-hero.jpg);
 	}
-}
-
-.section2 {
-	background-color: hsl(var(--clr-white));
 }
 
 .footer {
@@ -835,10 +831,13 @@ picture {
 	}
 }
 
-.commissions-text {
-	text-align: left;
+.commissions-header-wrap {
+	display: grid;
+	justify-content: center;
+	text-align: center;
 }
 
-.friday {
-	font-size: 300px;
+.commissions-text {
+	text-align: left;
+	padding: 3vw 5vw;
 }
