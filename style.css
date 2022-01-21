@@ -860,3 +860,12 @@ picture {
 .bespoke-hero {
 	max-height: 50vh;
 }
+
+.bespoke-quote {
+	grid-column: 2;
+	font-style: italic;
+}
+
+.bespoke-process {
+	max-height: 50vh;
+}
