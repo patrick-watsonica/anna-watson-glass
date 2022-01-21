@@ -825,6 +825,14 @@ p,
 	gap: 5vw;
 }
 
+.hero-quote {
+	grid-column: 2;
+	font-style: italic;
+	background-color: hsl(var(--clr-black) / 0.5);
+	border-radius: 20px;
+	margin: 5vw;
+	padding: 1vh 2vw;
+}
 /* .bespoke-process-img-wrap {
 	display: grid;
 	grid-template-columns: 1fr auto 1fr;
