@@ -838,6 +838,10 @@ p,
 	gap: 5vw;
 }
 
+.img-name {
+	justify-self: center;
+}
+
 .hero-quote {
 	grid-column: 2;
 	font-style: italic;
