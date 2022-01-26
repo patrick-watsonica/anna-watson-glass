@@ -504,6 +504,10 @@ p,
 	color: white;
 }
 
+.contact-form {
+	grid-template-rows: minmax(85vh, auto);
+}
+
 form {
 	display: grid;
 	grid-template-columns: 1fr 70% 1fr;
@@ -685,6 +689,19 @@ form > button {
 			hsl(var(--clr-black) / 0.8)
 		),
 		url(./images/flow-03.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.contact-form {
+	border-top: 2px solid white;
+	background: hsl(var(--black));
+	background-image: linear-gradient(
+			hsl(var(--clr-black) / 0.4),
+			hsl(var(--clr-black) / 0.7)
+		),
+		url(./images/autumn-sun-create-bg.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
