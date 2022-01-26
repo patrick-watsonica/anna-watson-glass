@@ -510,9 +510,15 @@ p,
 
 form {
 	display: grid;
-	grid-template-columns: 1fr 70% 1fr;
+	grid-template-columns: 1fr 90% 1fr;
 	/* grid-template-rows: repeat(4, 1fr); */
 	row-gap: 2vh;
+}
+
+@media (min-width: 720px) {
+	form {
+		grid-template-columns: 1fr 70% 1fr;
+	}
 }
 
 form > input {
@@ -594,10 +600,11 @@ form > button {
 	}
 
 	.text-img-right {
-		grid-template-columns: 1fr auto;
+		grid-template-columns: 1fr 60%;
 
 		align-items: center;
 		column-gap: 3vw;
+		margin-bottom: 3vh;
 	}
 
 	.text-img-right > img {
@@ -605,11 +612,13 @@ form > button {
 	}
 
 	.text-img-left {
-		grid-template-columns: auto 1fr;
+		grid-template-columns: 60% 1fr;
 		grid-template-areas: 'image text';
 
 		align-items: center;
 		column-gap: 3vw;
+		margin-bottom: 3vh;
+		margin-top: 3vh;
 	}
 
 	.text-img-left > img {
@@ -698,8 +707,8 @@ form > button {
 	border-top: 2px solid white;
 	background: hsl(var(--black));
 	background-image: linear-gradient(
-			hsl(var(--clr-black) / 0.4),
-			hsl(var(--clr-black) / 0.7)
+			hsl(var(--clr-black) / 0.8),
+			hsl(var(--clr-black) / 0.6)
 		),
 		url(./images/autumn-sun-create-bg.jpg);
 	background-position: center;
