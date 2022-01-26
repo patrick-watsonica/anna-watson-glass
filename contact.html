@@ -14,6 +14,7 @@
 		<link rel="stylesheet" href="style.css" />
 		<title>Anna Watson Glass - contact</title>
 		<script src="app.js" defer></script>
+        <script src="https://unpkg.com/@botpoison/browser" async></script>
 	</head>
 	<div class="contact">
         <a class="skip-to-content" href="#main">skip to content</a>
@@ -75,8 +76,10 @@
         <main id="main">
             <section class="section1 section-wrap">
                 <div class="section1-layout top-9">
-                    <form action="https://submit-form.com/qMUXo8We">
-                        <input type="email" name="email" />
+                    <form action="https://submit-form.com/qMUXo8We" data-botpoison-public-key="pk_ea797cd6-3c31-4000-86e7-5648725246c0">
+                        <input type="text" name="message" placeholder="Name"/>
+                        <input type="email" name="email" placeholder="Email Address"/>
+                        <input type="text" name="message" placeholder="Message"/>
                         <button type="submit">Send Message</button>
                     </form>
                 </div>
