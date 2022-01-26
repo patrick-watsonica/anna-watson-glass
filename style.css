@@ -486,7 +486,8 @@ p,
 .home-section1 {
 	grid-template-rows: minmax(85vh, auto);
 
-	place-items: center;
+	justify-items: center;
+	align-items: start;
 	text-align: center;
 }
 
@@ -562,7 +563,7 @@ p,
 	}
 
 	.text-img-right {
-		grid-template-columns: 1fr 50vw;
+		grid-template-columns: 1fr auto;
 
 		align-items: center;
 		column-gap: 3vw;
@@ -573,7 +574,7 @@ p,
 	}
 
 	.text-img-left {
-		grid-template-columns: 50vw 1fr;
+		grid-template-columns: auto 1fr;
 		grid-template-areas: 'image text';
 
 		align-items: center;
@@ -729,26 +730,6 @@ p,
 }
 
 /* /////////////////////////// */
-
-/* ///////////////////////////*/
-/* button element so that text can wrap easily */
-.call-action-1-btn {
-	background-color: hsl(var(--clr-black) / 0.5);
-	border: 0.1rem solid hsl(var(--clr-white));
-	border-radius: 3rem;
-	cursor: pointer;
-	padding: 1rem 1rem 1rem;
-	text-decoration: none;
-	white-space: nowrap;
-}
-
-.call-action-1-btn:hover,
-.call-action-1-btn:focus {
-	background-color: hsl(var(--clr-white));
-	border: 0.1rem solid hsl(var(--clr-black));
-	color: hsl(var(--clr-black));
-}
-
 /* ///////////////////////////*/
 
 .two-cta {
@@ -791,11 +772,11 @@ p,
 
 /* ///////////////////////////// */
 
-.call-action-2-btn {
+.call-action-1-btn {
 	justify-content: center;
 }
 
-.call-action-2-btn > a {
+.call-action-1-btn > a {
 	background-color: hsl(var(--clr-light));
 	border: 0.1rem solid hsl(var(--clr-black));
 	border-radius: 3rem;
@@ -805,14 +786,14 @@ p,
 	white-space: nowrap;
 }
 
-.call-action-2-btn > a:hover,
-.call-action-2-btn > a:focus {
+.call-action-1-btn > a:hover,
+.call-action-1-btn > a:focus {
 	background-color: hsl(var(--clr-dark));
 	border: 0.1rem solid hsl(var(--clr-white));
 	color: hsl(var(--clr-white));
 }
 
-.call-action-2-btn > a:active {
+.call-action-1-btn > a:active {
 	background-color: var(--clr-btn);
 	border: 0.1rem solid hsl(var(--clr-white));
 	color: hsl(var(--clr-black));
