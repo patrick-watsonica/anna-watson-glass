@@ -309,6 +309,10 @@ p,
 	border-color: hsl(var(--clr-white));
 	border-width: var(--bw-all);
 }
+
+.center-text {
+	text-align: center;
+}
 /* /////////////////////////////////////////////////////////// */
 
 /* ACCESSIBILITY */
