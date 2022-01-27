@@ -523,20 +523,20 @@ form {
 
 form > input {
 	grid-column: 2/3;
-	padding: 2vh;
+	padding: 1vh 2vw;
 	border-radius: 10px;
 }
 
 form > textarea {
 	grid-column: 2/3;
-	padding: 2vh;
+	padding: 1vh 2vw;
 	border-radius: 10px;
 }
 
 form > button {
 	grid-column: 2/3;
 	margin: 0 10vw;
-	padding: 2vh;
+	padding: 1vh 2vw;
 	border-radius: 10px;
 	background: var(--clr-btn);
 }
