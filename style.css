@@ -727,7 +727,7 @@ form > button {
 }
 .contact-btn-mob {
 	background-color: var(--clr-btn);
-	border: 0.1rem solid hsl(var(--clr-black));
+	border: 0.1rem solid hsl(var(--clr-white));
 	border-radius: 2rem;
 	cursor: pointer;
 	padding: 0.3rem 0.8rem;
@@ -798,7 +798,7 @@ form > button {
 
 .contact-btn-2 > a {
 	background-color: var(--clr-btn);
-	border: 0.1rem solid hsl(var(--clr-black));
+	border: 0.1rem solid hsl(var(--clr-white));
 	border-radius: 2rem;
 	cursor: pointer;
 	padding: 1rem 4rem;
@@ -831,7 +831,7 @@ form > button {
 
 .call-action-1-btn > a {
 	background-color: var(--clr-light);
-	border: 0.1rem solid hsl(var(--clr-black));
+	border: 0.1rem solid hsl(var(--clr-white));
 	border-radius: 3rem;
 	cursor: pointer;
 	padding: 1rem 2rem;
