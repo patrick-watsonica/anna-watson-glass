@@ -4,10 +4,9 @@
 
 :root {
 	/* COLORS */
-	--clr-dark: 232, 100%, 30%;
-	--clr-light: 203, 99%, 48%;
-	--clr-accent: 240, 100%, 27%;
-	--clr-btn: #d6a603;
+	--clr-dark: #001499;
+	--clr-light: #1623fb;
+	--clr-btn: #fbf116;
 	--clr-black: 0 0% 0%;
 	--clr-white: 0 0% 100%;
 
@@ -205,13 +204,10 @@ p,
 /*  COLORS */
 
 .bg-dark {
-	background-color: hsl(var(--clr-dark));
+	background-color: var(--clr-dark);
 }
 .bg-light {
-	background-color: hsl(var(--clr-light));
-}
-.bg-accent {
-	background-color: hsl(var(--clr-accent));
+	background-color: var(--clr-light);
 }
 .bg-white {
 	background-color: hsl(var(--clr-white));
@@ -221,10 +217,10 @@ p,
 }
 
 .text-dark {
-	color: hsl(var(--clr-dark));
+	color: var(--clr-dark);
 }
 .text-light {
-	color: hsl(var(--clr-light));
+	color: var(--clr-light);
 }
 .text-white {
 	color: hsl(var(--clr-white));
@@ -741,7 +737,7 @@ form > button {
 
 .contact-btn-mob:hover,
 .contact-btn-mob:focus {
-	background-color: hsl(var(--clr-dark));
+	background-color: var(--clr-dark);
 	border: 0.1rem solid hsl(var(--clr-white));
 	color: hsl(var(--clr-white));
 }
@@ -771,7 +767,7 @@ form > button {
 
 .contact-btn:hover,
 .contact-btn:focus {
-	background-color: hsl(var(--clr-dark));
+	background-color: var(--clr-dark);
 	color: hsl(var(--clr-white));
 }
 
@@ -812,7 +808,7 @@ form > button {
 
 .contact-btn-2 > a:hover,
 .contact-btn-2 > a:focus {
-	background-color: hsl(var(--clr-dark));
+	background-color: var(--clr-dark);
 	border: 0.1rem solid hsl(var(--clr-black));
 	color: hsl(var(--clr-white));
 }
@@ -834,7 +830,7 @@ form > button {
 }
 
 .call-action-1-btn > a {
-	background-color: hsl(var(--clr-light));
+	background-color: var(--clr-light);
 	border: 0.1rem solid hsl(var(--clr-black));
 	border-radius: 3rem;
 	cursor: pointer;
@@ -845,7 +841,7 @@ form > button {
 
 .call-action-1-btn > a:hover,
 .call-action-1-btn > a:focus {
-	background-color: hsl(var(--clr-dark));
+	background-color: var(--clr-dark);
 	border: 0.1rem solid hsl(var(--clr-white));
 	color: hsl(var(--clr-white));
 }
