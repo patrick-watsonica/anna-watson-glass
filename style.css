@@ -853,7 +853,6 @@ form > button {
 
 .call-action-1-btn > a {
 	background-color: var(--clr-light);
-	border: 0.1rem solid hsl(var(--clr-white));
 	border-radius: 3rem;
 	cursor: pointer;
 	padding: 1rem 2rem;
@@ -874,6 +873,13 @@ form > button {
 	color: hsl(var(--clr-black));
 }
 
+.btn-border-white {
+	border: 0.1rem solid hsl(var(--clr-white));
+}
+
+.btn-border-black {
+	border: 0.1rem solid hsl(var(--clr-black));
+}
 /* ///////////////////////////*/
 
 .img-container {
