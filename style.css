@@ -505,45 +505,6 @@ p,
 	color: white;
 }
 
-.contact-form {
-	grid-template-rows: minmax(85vh, auto);
-}
-
-form {
-	display: grid;
-	grid-template-columns: 1fr 90% 1fr;
-	/* grid-template-rows: repeat(4, 1fr); */
-	row-gap: 2vh;
-}
-
-@media (min-width: 720px) {
-	form {
-		grid-template-columns: 1fr 70% 1fr;
-	}
-}
-
-form > input {
-	grid-column: 2/3;
-	padding: 1vh 2vw;
-	border-radius: 10px;
-}
-
-form > textarea {
-	grid-column: 2/3;
-	padding: 1vh 2vw;
-	border-radius: 10px;
-}
-
-form > button {
-	grid-column: 2/3;
-	margin: 0 10vw;
-	padding: 1vh 2vw;
-	border-radius: 10px;
-	background: var(--clr-btn);
-}
-
-/* ////////////////////// */
-
 /* ////////////////////// */
 
 .one-cta {
@@ -879,6 +840,52 @@ form > button {
 }
 /* ///////////////////////////*/
 
+.contact-form {
+	grid-template-rows: minmax(85vh, auto);
+}
+
+form {
+	display: grid;
+	grid-template-columns: 1fr 90% 1fr;
+	row-gap: 2vh;
+}
+
+@media (min-width: 720px) {
+	form {
+		grid-template-columns: 1fr 70% 1fr;
+	}
+}
+
+form > input {
+	grid-column: 2/3;
+	padding: 1vh 2vw;
+	border-radius: 10px;
+}
+
+form > textarea {
+	grid-column: 2/3;
+	padding: 1vh 2vw;
+	border-radius: 10px;
+}
+
+form > button {
+	grid-column: 2/3;
+	margin: 0 10vw;
+	padding: 1vh 2vw;
+	border-radius: 10px;
+	background: var(--clr-btn);
+	cursor: pointer;
+}
+
+form > button:hover,
+form > button:focus {
+	background-color: var(--clr-btn-dark);
+	border: 0.1rem solid hsl(var(--clr-black));
+	color: var(--clr-dark);
+}
+
+/* ////////////////////// */
+
 .img-container {
 	display: grid;
 	justify-content: center;
@@ -910,11 +917,6 @@ form > button {
 	margin: 5vw;
 	padding: 1vh 2vw;
 }
-/* .bespoke-process-img-wrap {
-	display: grid;
-	grid-template-columns: 1fr auto 1fr;
-	grid-template-rows: 50vh;
-} */
 
 picture {
 	display: grid;
