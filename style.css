@@ -516,12 +516,6 @@ p,
 	justify-self: center;
 }
 
-/* .two-item-flex {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-} */
-
 .two-img-first {
 	width: 100%;
 	border-color: hsl(var(--clr-white));
@@ -543,11 +537,6 @@ p,
 }
 
 @media (min-width: 720px) {
-	/* .two-item-flex {
-		flex-direction: row;
-		flex-wrap: nowrap;
-	} */
-
 	.two-item-grid {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
