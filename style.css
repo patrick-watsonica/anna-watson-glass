@@ -377,7 +377,7 @@ p,
 	margin: 0;
 	padding: 15vh 3rem;
 	position: fixed;
-	transform: translateX(130%);
+	transform: translateX(200%);
 	transition: transform 500ms ease-in-out;
 	z-index: 10;
 }
