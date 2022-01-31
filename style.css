@@ -598,6 +598,7 @@ form > button {
 	.two-img-first,
 	.two-img-last {
 		width: 50%;
+		height: auto;
 	}
 
 	.text-img-right {
