@@ -7,6 +7,7 @@
 	--clr-dark: #001499;
 	--clr-light: #1623fb;
 	--clr-btn: #fbf116;
+	--clr-btn-dark: #ffc60a;
 	--clr-black: 0 0% 0%;
 	--clr-white: 0 0% 100%;
 
@@ -737,9 +738,9 @@ form > button {
 
 .contact-btn-mob:hover,
 .contact-btn-mob:focus {
-	background-color: var(--clr-dark);
+	background-color: var(--clr-btn-dark);
 	border: 0.1rem solid hsl(var(--clr-white));
-	color: hsl(var(--clr-white));
+	color: var(--clr-dark);
 }
 
 .contact-btn-mob:active {
@@ -767,8 +768,8 @@ form > button {
 
 .contact-btn:hover,
 .contact-btn:focus {
-	background-color: var(--clr-dark);
-	color: hsl(var(--clr-white));
+	background-color: var(--clr-btn-dark);
+	color: var(--clr-dark);
 }
 
 .contact-btn:active {
@@ -808,9 +809,9 @@ form > button {
 
 .contact-btn-2 > a:hover,
 .contact-btn-2 > a:focus {
-	background-color: var(--clr-dark);
+	background-color: var(--clr-btn-dark);
 	border: 0.1rem solid hsl(var(--clr-black));
-	color: hsl(var(--clr-white));
+	color: var(--clr-dark);
 }
 
 .contact-btn-2 > a:active {
@@ -830,19 +831,14 @@ form > button {
 
 .contact-btn-1 > a:hover,
 .contact-btn-1 > a:focus {
-	background-color: var(--clr-dark);
+	background-color: var(--clr-btn-dark);
 	border: 0.1rem solid hsl(var(--clr-black));
-	color: hsl(var(--clr-white));
+	color: var(--clr-dark);
 }
 
 .contact-btn-1 > a:active {
 	background-color: var(--clr-btn);
 	color: hsl(var(--clr-black));
-}
-
-.contact-bespoke > a:hover,
-.contact-bespoke > a:focus {
-	border: 0.1rem solid hsl(var(--clr-white));
 }
 
 /* ///////////////////////////// */
