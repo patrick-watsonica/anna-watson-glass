@@ -810,7 +810,7 @@ p,
 	background-color: var(--clr-light);
 	border-radius: 3rem;
 	cursor: pointer;
-	padding: 1rem 2rem;
+	padding: 1rem 1rem;
 	text-decoration: none;
 	white-space: nowrap;
 }
